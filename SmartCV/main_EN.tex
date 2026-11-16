@@ -1,0 +1,165 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage[margin=1cm]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\usepackage{mathptmx}
+
+% ==========================================
+% SELECT YOUR ARCHETYPE HERE (A, B, C, or D)
+% ==========================================
+\newcommand{\ARCH}{D}
+% Dynamically load archetype_A.tex, archetype_B.tex, etc.
+\input{archetype_\ARCH.tex}
+
+% Select which projects and jobs to display by their variable prefix:
+\newcommand{\projectOne}{hyperloop}
+\newcommand{\projectTwo}{rover}
+\newcommand{\projectThree}{fsae}
+\newcommand{\projectFour}{drone}
+
+\newcommand{\jobOne}{spacelab}
+\newcommand{\jobTwo}{alpes}
+%\newcommand{\jobThree}{solarship}
+\newcommand{\jobFour}{solarship}
+
+% Helper command to dynamically evaluate: \get{\projectOne}{Title} -> \roverTitle
+\newcommand{\get}[2]{\csname #1#2\endcsname}
+
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=*, itemsep=1pt, topsep=2pt}
+
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\titlespacing{\section}{0pt}{4pt}{4pt}
+
+\titleformat{\subsection}[runin]{\bfseries}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{4pt}{0pt}
+
+%--------------------------------------- BEGINNING ------------------------
+
+\begin{document}
+\small
+
+\begin{center}
+{\LARGE\bfseries Roman VILLARREAL}
+
+\vspace{2pt}
+Mechanical Engineer | Systems Integration, Machine Design \& Manufacturing
+
+Asturias, Spain | +34 711 501 576 • +52 55 68 84 30 65 | riv2004@nyu.edu
+
+Portfolio:
+\href{https://roman-villarreal-2.jimdosite.com/}{roman-villarreal-2.jimdosite.com} • 
+\href{https://www.linkedin.com/in/roman-isaac-villarreal/}{linkedin.com/in/roman-isaac-villarreal}
+\end{center}
+%\cvsummary
+%--------------------------------------- EDCUATION ------------------------
+%\hrulefill 
+\section*{EDUCATION}
+
+\textbf{MS Mechatronics Engineering} \hfill 2025 - 2027
+
+European Double Degree: SUPMICROTECH (France, taught in French) \& Universidad de Oviedo (Spain, taught in Spanish)
+
+Specialization : System Analysis \& Production Development, AI, Micro-techniques \& Manufacturing Engineering
+
+\vspace{4pt}
+
+\textbf{BS Mechanical Engineering} \hfill 2021 - 2025
+
+New York University Abu Dhabi (NYU-AD), United Arab Emirates
+
+%Relevant courses : Aerodynamics \& Propulsion, Soft Robotics, Space Economy, Advanced CAD, Composite Materials
+\vspace{2pt}
+
+%--------------------------------------- EXPERIENCE ------------------------
+\hrulefill 
+\section*{EXPERIENCE}
+
+\textbf{\get{\jobOne}{org}} \hfill \get{\jobOne}{location}
+
+\textit{\get{\jobOne}{title}} \hfill \get{\jobOne}{dates}
+
+\begin{itemize}
+    \get{\jobOne}{bullets}
+\end{itemize}
+
+
+\vspace{2pt}
+
+\textbf{\get{\jobTwo}{org}} \hfill \get{\jobTwo}{location}
+
+\textit{\get{\jobTwo}{title}} \hfill \get{\jobTwo}{dates}
+
+\begin{itemize}
+    \get{\jobTwo}{bullets}
+\end{itemize}
+
+\vspace{2pt}
+
+%\textbf{\get{\jobThree}{org}} \hfill \get{\jobThree}{location}
+
+%\textit{\get{\jobThree}{title}} \hfill \get{\jobThree}{dates}
+
+%\begin{itemize}
+%    \get{\jobThree}{bullets}
+%\end{itemize}
+
+%\vspace{2pt}
+
+\textbf{\get{\jobFour}{org}} \hfill \get{\jobFour}{location}
+
+\textit{\get{\jobFour}{title}} \hfill \get{\jobFour}{dates}
+
+\begin{itemize}
+    \get{\jobFour}{bullets}
+\end{itemize}
+
+\vspace{2pt}
+
+
+%--------------------------------------- PROJECTS ------------------------
+
+\hrulefill 
+\section*{PROJECTS}
+
+\textbf{\get{\projectOne}{title}} \hfill \get{\projectOne}{dates}
+
+\get{\projectOne}{descTwo}
+
+\vspace{4pt}
+
+\textbf{\get{\projectTwo}{title}} \hfill \get{\projectTwo}{dates}
+
+\get{\projectTwo}{descOne}
+
+\vspace{4pt}
+
+\textbf{\get{\projectThree}{title}} \hfill \get{\projectThree}{dates}
+
+\get{\projectThree}{descOne}
+
+\vspace{4pt}
+
+\textbf{\get{\projectFour}{title}} \hfill \get{\projectFour}{dates}
+
+\get{\projectFour}{descOne}
+
+\vspace{2pt}
+
+\hrulefill 
+
+%--------------------------------------- skills  ------------------------
+
+\skills
+
+%\input{skills}
+
+\end{document}

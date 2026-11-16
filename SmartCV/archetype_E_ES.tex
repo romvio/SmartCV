@@ -1,0 +1,260 @@
+% !TeX encoding = UTF-8
+% Español de España. Cargar un único arquetipo desde el archivo principal.
+\newcommand{\cvsummary}{Ingeniero mecánico por NYU Abu Dhabi y mecatrónico del programa EU4M, con experiencia en ciencias espaciales. Combino procesamiento de datos de misiones marcianas asistido por inteligencia artificial y aprendizaje automático con trabajo práctico en control embebido, diseño mecánico y sistemas robóticos para integrar la mecánica en la Industria 4.0.}
+
+% --- COMPETENCIAS ---
+\newcommand{\skills}{
+    \section*{COMPETENCIAS TÉCNICAS}
+    {\small
+    \textbf{Programación e IA:} Python (NumPy, SciPy), MATLAB, C++, Java, SQL, HTML/CSS/JS, Git, ROS 2, conocimientos básicos de PyTorch/fastai, procesamiento de imágenes y React.
+
+    \vspace{1pt}
+    \textbf{Diseño mecánico y simulación:} SolidWorks (CSWA), CATIA V5, ANSYS (Mechanical, Fluent, AQWA), COMSOL, análisis por elementos finitos (FEA), dinámica de fluidos computacional (CFD), análisis de vibraciones, tolerancias geométricas y dimensionales (GD\&T), Solid Edge y Moldflow.
+
+    \vspace{1pt}
+    \textbf{Robótica y sistemas embebidos:} Microcontroladores, FPGA, Raspberry Pi, PLC, diseño de placas de circuito impreso (PCB), sensores, instrumentación, control PID, Simulink, espacio de estados y LQR, fusión sensorial con IMU y máquinas de estados finitos.
+
+    \vspace{1pt}
+    \textbf{Ciencias espaciales y cálculo científico:} Mecánica orbital, procesamiento de imágenes satelitales, cartografía planetaria, SIG (PostgreSQL/PostGIS), simulación de vuelo, integración numérica, escaneado 3D y visualización científica.
+
+    \vspace{1pt}
+    \textbf{Fabricación y materiales:} Mecanizado CNC, fabricación aditiva (PLA/TPU), moldeo por inyección, materiales compuestos de fibra de carbono, selección de materiales y fabricación MEMS (fotolitografía, PVD/pulverización catódica).
+
+    \vspace{1pt}
+    \textbf{Idiomas:} Español nativo, inglés C2, francés C2, italiano A1 y alemán A1.
+    }
+}
+
+
+% --- PROYECTOS ---
+\newcommand{\vawttitle}{VAWT -- Aprovechamiento de energía eólica urbana}
+\newcommand{\vawtdates}{En curso (fecha de inicio no especificada)}
+\newcommand{\vawtlocation}{Abu Dabi, EAU}
+\newcommand{\vawtdescOne}{Desarrollé un concepto de aerogenerador de eje vertical para aprovechar el viento generado por el tráfico, transformando una fuente de flujo de aire no convencional en un diseño de captación de energía urbana.}
+\newcommand{\vawtdescTwo}{Evalué el concepto del aerogenerador mediante simulaciones CFD en ANSYS Fluent, utilizando análisis numérico de flujo para estudiar su comportamiento aerodinámico.}
+
+\newcommand{\fsaetitle}{Formula SAE -- Suspensión y chasis de fibra de carbono}
+\newcommand{\fsaedates}{Otoño de 2024 -- Actualidad}
+\newcommand{\fsaelocation}{Abu Dabi, EAU}
+\newcommand{\fsaedescOne}{Diseñé sistemas de suspensión y chasis de fibra de carbono para un vehículo Formula SAE, combinando geometría en SolidWorks y análisis por elementos finitos en ANSYS.}
+\newcommand{\fsaedescTwo}{Estudié la cinemática de la suspensión mediante análisis en SolidWorks y ANSYS, utilizando el comportamiento simulado del mecanismo para orientar el desarrollo de sus prestaciones dinámicas.}
+
+\newcommand{\tactitle}{Mininevera -- Sistema termoeléctrico TEC de dos etapas}
+\newcommand{\tacdates}{Primavera de 2025}
+\newcommand{\taclocation}{Abu Dabi, EAU}
+\newcommand{\tacdescOne}{Diseñé un sistema de refrigeración sin refrigerante basado en un módulo TEC de dos etapas, aplicando termodinámica a una alternativa de estado sólido a la refrigeración convencional.}
+\newcommand{\tacdescTwo}{Instrumenté el conjunto de refrigeración para supervisión térmica en tiempo real, creando una base experimental para observar y optimizar su comportamiento.}
+
+\newcommand{\orbitaltitle}{OrbitalGrid -- Sistema de información geográfica espacial}
+\newcommand{\orbitaldates}{06/2024 - Actualidad}
+\newcommand{\orbitallocation}{Abu Dabi, EAU}
+\newcommand{\orbitaldescOne}{Desarrollé un sistema SIG basado en SQL que combina escaneado 3D y datos satelitales para cartografía aeroespacial, relacionando geometría local e información obtenida desde el espacio.}
+\newcommand{\orbitaldescTwo}{Implementé ingeniería de datos espaciales en PostgreSQL para organizar la información del sistema cartográfico OrbitalGrid.}
+
+\newcommand{\softrobtitle}{Exoesqueleto robótico para rehabilitación tras un ictus}
+\newcommand{\softrobdates}{04/2024 - 05/2024}
+\newcommand{\softroblocation}{Abu Dabi, EAU}
+\newcommand{\softrobdescOne}{Diseñé un exoesqueleto de dedos inspirado en el origami para rehabilitación tras un ictus, utilizando accionamiento por hilos SMA para transformar un concepto biomecánico en un mecanismo robótico.}
+\newcommand{\softrobdescTwo}{Combiné polímero Dragon Skin e hilos de aleación con memoria de forma para desarrollar una estructura de accionamiento flexible destinada a reproducir la función muscular de los dedos.}
+
+\newcommand{\exoplanettitle}{Simulador de tránsitos de exoplanetas}
+\newcommand{\exoplanetdates}{Primavera de 2025}
+\newcommand{\exoplanetlocation}{Abu Dabi, EAU}
+\newcommand{\exoplanetdescOne}{Desarrollé en Python un simulador de tránsitos de exoplanetas que genera series temporales de curvas de luz a partir de parámetros de mecánica orbital y física estelar.}
+\newcommand{\exoplanetdescTwo}{Facilité la exploración de distintas configuraciones estrella--planeta mediante la parametrización de las variables físicas de entrada del modelo de tránsito.}
+
+\newcommand{\windTurbinetitle}{Aerogenerador marino flotante -- Estabilización activa}
+\newcommand{\windTurbinedates}{05/2026 - 06/2026}
+\newcommand{\windTurbinelocation}{Besançon, Francia}
+\newcommand{\windTurbinedescOne}{Diseñé mecánicamente una plataforma marina semisumergible de tres columnas con un sistema de control para estabilizar un prototipo de aerogenerador a escala, analizando el cabeceo y el balanceo mediante un sensor MPU6050 y control realimentado con servomotores para la estabilización activa de la góndola.}
+
+\newcommand{\carbonmetertitle}{CARBONMETRE -- Ecodiseño y medición de carbono}
+\newcommand{\carbonmeterdates}{09/2025 - 12/2025}
+\newcommand{\carbonmeterlocation}{Besançon, Francia}
+\newcommand{\carbonmeterdescOne}{Combiné fabricación, ecodiseño y metrología en el proyecto CARBONMETRE, aplicando principios de ingeniería de medida a la evaluación de carbono.}
+\newcommand{\carbonmeterdescTwo}{Apliqué principios de fabricación industrial a un proyecto de medición de carbono, relacionando el trabajo de fabricación con la ingeniería ambiental.}
+
+\newcommand{\hvactitle}{Acondicionamiento térmico de una habitación de residencia -- Refrigeración pasiva y evaporativa}
+\newcommand{\hvacdates}{06/2026}
+\newcommand{\hvaclocation}{Besançon, Francia}
+\newcommand{\hvacdescOne}{Reduje la temperatura de una habitación de 9 m$^2$ hasta un máximo declarado de 3 \textdegree{}C respecto a las condiciones previas a la intervención, mediante una pantalla solar exterior y un refrigerador de agua congelada con ventilador.}
+\newcommand{\hvacdescTwo}{Bloqueé la radiación solar directa en las horas punta de 14:00 a 21:00 mediante una pantalla exterior de papel de aluminio reflectante, EPS de 1 cm y cartón ondulado.}
+
+\newcommand{\controlBoxtitle}{Instalación eléctrica integral -- Sistemas para eventos de mediana escala}
+\newcommand{\controlBoxdates}{06/2023 - 08/2023}
+\newcommand{\controlBoxlocation}{Ciudad de México, México}
+\newcommand{\controlBoxdescOne}{Reduje un 30\% el tiempo de montaje del sistema eléctrico respecto a la instalación anterior mediante el diseño de un cuadro de control de 12 entradas para eventos de mediana escala.}
+\newcommand{\controlBoxdescTwo}{Desarrollé un sistema eléctrico basado en PLC para eventos en directo, traduciendo requisitos operativos en hardware de control coordinado.}
+
+\newcommand{\hyperlooptitle}{NYC Hyperloop -- Prototipo a escala reducida}
+\newcommand{\hyperloopdates}{01/2024 - 05/2024}
+\newcommand{\hyperlooplocation}{Nueva York, EE. UU.}
+\newcommand{\hyperloopdescOne}{Lideré el equipo mecánico de un Hyperloop a escala reducida para el trayecto Nueva York--Long Island con suspensión electrodinámica Inductrack, coordinando su desarrollo dentro del diseño global.}
+\newcommand{\hyperloopdescTwo}{Estudié la levitación magnética con COMSOL, ANSYS y SolidWorks, aplicando simulación al principio de funcionamiento del sistema de transporte.}
+
+\newcommand{\dronetitle}{Cuadricóptero funcional -- Estructura ligera}
+\newcommand{\dronedates}{03/2024 - 05/2024}
+\newcommand{\dronelocation}{Nueva York, EE. UU.}
+\newcommand{\dronedescOne}{Reduje un 40\% el peso del cuadricóptero respecto a la referencia del proyecto mediante una estructura impresa en 3D en PLA y TPU.}
+\newcommand{\dronedescTwo}{Evalué el comportamiento frente al impacto mediante ensayos de caída contrastados con los criterios de rendimiento del proyecto, combinando pruebas físicas y desarrollo de la estructura.}
+
+\newcommand{\trentxwbtitle}{Rolls-Royce Trent XWB -- Modelo 3D funcional}
+\newcommand{\trentxwbdates}{01/2024 - 05/2024}
+\newcommand{\trentxwblocation}{Nueva York, EE. UU.}
+\newcommand{\trentxwbdescOne}{Codesarrollé un modelo 3D completo del Rolls-Royce Trent XWB en SolidWorks, transformando un sistema complejo de propulsión en un conjunto CAD y realizando análisis estructurales del eje principal en SolidWorks y simulaciones aerodinámicas en ANSYS.}
+\newcommand{\trentxwbdescTwo}{Estudié el comportamiento aerodinámico con ANSYS, ampliando el proyecto de modelado del motor más allá de su representación geométrica.}
+
+\newcommand{\liostitle}{LIOS -- Asistente de voz con IA}
+\newcommand{\liosdates}{12/2024 - Actualidad}
+\newcommand{\lioslocation}{Abu Dabi, EAU}
+\newcommand{\liosdescOne}{Desarrollé un asistente de voz en Python que combina procesamiento del lenguaje natural, datos en tiempo real y API externas, transformando funciones de IA aplicada en un sistema de software interactivo.}
+\newcommand{\liosdescTwo}{Implementé memoria contextual para conservar información durante las interacciones del asistente, ampliando su funcionalidad más allá de consultas aisladas.}
+
+\newcommand{\fitpaltitle}{FitPal -- Dispositivo inteligente para entrenamiento físico}
+\newcommand{\fitpaldates}{09/2021 - 12/2021}
+\newcommand{\fitpallocation}{Abu Dabi, EAU}
+\newcommand{\fitpaldescOne}{Codesarrollé un dispositivo inteligente de entrenamiento físico basado en M5Stack para analizar ejercicios en tiempo real, integrando hardware embebido y mediciones para el usuario.}
+\newcommand{\fitpaldescTwo}{Implementé transferencia de datos IoT y conectividad móvil mediante Arduino IoT App, vinculando el dispositivo con una interfaz remota.}
+
+\newcommand{\covidtitle}{Cabina de desinfección automatizada}
+\newcommand{\coviddates}{09/2020 - 02/2021}
+\newcommand{\covidlocation}{Ciudad de México, México}
+\newcommand{\coviddescOne}{Diseñé un prototipo de cabina de desinfección automatizada basado en Arduino, integrando electrónica de control y un sistema físico de nebulización.}
+\newcommand{\coviddescTwo}{Implementé comunicación inalámbrica en el prototipo de cabina, añadiendo conectividad remota al sistema de control.}
+
+\newcommand{\rovertitle}{Rover teleoperado -- Escaneado espacial 3D}
+\newcommand{\roverdates}{09/2026 - Actualidad}
+\newcommand{\roverlocation}{Oviedo, España}
+\newcommand{\roverdescOne}{Desarrollo un rover teleoperado para escaneado espacial 3D, integrando control embebido, adquisición de nubes de puntos mediante un sensor flexx2 y visualización remota mediante comunicación TCP/IP entre M5Stack y Raspberry Pi; diseño el chasis y la estructura mecánica para alojar la electrónica mediante moldeo por inyección de ABS.}
+\newcommand{\roverdescTwo}{Desarrollo un rover de escaneado 3D que combina control embebido, adquisición de nubes de puntos y visualización y control remotos; diseño el chasis y la estructura mecánica para moldeo por inyección de ABS.}
+
+\newcommand{\microsensortitle}{Microsensor piezorresistivo de presión de detonación}
+\newcommand{\microsensordates}{05/2026 - 06/2026}
+\newcommand{\microsensorlocation}{Besançon, Francia}
+\newcommand{\microsensordescOne}{Reduje las iteraciones de geometría y diseño de máscaras mediante la automatización en Python del dimensionamiento de sensores piezorresistivos, sustituyendo los recálculos manuales por restricciones de K, $\Delta R/R_0$ y resistividad impuestas por código.}
+\newcommand{\microsensordescTwo}{Lideré la selección de materiales de un sensor a escala de oblea con objetivo de interfaz de 50 $\Omega$ y resistencia a presiones de 10 GPa, equilibrando requisitos eléctricos, mecánicos y económicos acoplados.}
+
+\newcommand{\missiletitle}{Simulador de dinámica de interceptación de misiles}
+\newcommand{\missilelocation}{Besançon, Francia}
+\newcommand{\missiledescOne}{Desarrollé en MATLAB una simulación 3D de interceptación de misiles mediante guiado por navegación proporcional, integración numérica y visualización de trayectorias en tiempo real con detección de impacto.}
+
+% --- EXPERIENCIA ---
+\newcommand{\carbonorg}{Energy Innovation Capital}
+\newcommand{\carbontitle}{Analista de mercado de captura de carbono}
+\newcommand{\carbondates}{10/2023 - 01/2024}
+\newcommand{\carbonlocation}{Abu Dabi, EAU}
+\newcommand{\carbonbullets}{%
+  \item Elaboré recomendaciones de inversión CCUS para un fondo de capital riesgo de Abu Dabi, transformando investigación sobre captura de carbono en evaluaciones de empresas emergentes.
+  \item Sinteticé avances científicos y técnicos en captura de carbono en presentaciones para analistas sénior, relacionando los resultados de investigación con cuestiones de inversión.
+  \item Elaboré análisis de tendencias de mercado que relacionaban factores tecnológicos y riesgos de inversión mediante el estudio de datos del sector de captura de carbono.
+  \item Relacioné investigación técnica y evaluación comercial mediante recomendaciones estratégicas basadas en ciencia CCUS y análisis de mercado.
+}
+
+\newcommand{\spacelaborg}{NYU Abu Dhabi, Centro de Ciencias Espaciales}
+\newcommand{\spacelabtitle}{Ingeniero e investigador de I+D -- Plataforma de ciencias planetarias}
+\newcommand{\spacelabdates}{05/2025 - 09/2025}
+\newcommand{\spacelablocation}{Abu Dabi, EAU}
+\newcommand{\spacelabbullets}{%
+  \item Desplegué un atlas interactivo de Marte con imágenes multiespectrales reales de Emirates Mars Mission HOPE, desarrollando la \href{https://romvio.github.io/mars-viewer/}{aplicación web y móvil} en React y JavaScript y presentándola a la App Store de Apple.
+  \item Mejoré un 40\% el procesamiento de imágenes planetarias mediante compresión optimizada y corrección de píxeles asistida por aprendizaje automático, combinando imágenes HOPE en mapas mediante calibración de solapamientos, unión de imágenes y normalización del brillo.
+  \item Recogí muestras de suelo y sedimentos en emplazamientos desérticos de EAU mediante inserción de tubos y excavación, documentando el terreno y los sedimentos para investigar posibles análogos del regolito marciano.
+}
+
+\newcommand{\geoorg}{Global Education NYUAD}
+\newcommand{\geotitle}{Coordinador de Global Education -- Estudiantes visitantes}
+\newcommand{\geodates}{12/2025 - 05/2025}
+\newcommand{\geolocation}{Abu Dabi, EAU}
+\newcommand{\geobullets}{%
+  \item Coordiné salidas académicas y culturales por EAU para estudiantes internacionales visitantes, transformando los planes del programa en actividades de grupo organizadas.
+  \item Lideré la planificación logística del equipo de coordinadores y el reparto de responsabilidades para atender a grupos diversos de estudiantes.
+  \item Integré protocolos de seguridad en la preparación de las salidas, relacionando la logística de grupo con las precauciones operativas.
+  \item Actué como enlace para estudiantes visitantes, conectándolos con los servicios de apoyo universitario mediante comunicación directa.
+}
+
+\newcommand{\geoOneorg}{Global Education NYUAD}
+\newcommand{\geoOnetitle}{Coordinador de Global Education -- Estudiantes de primer curso}
+\newcommand{\geoOnedates}{09/2026 - 12/2024}
+\newcommand{\geoOnelocation}{Abu Dabi, EAU}
+\newcommand{\geoOnebullets}{%
+  \item Facilité sesiones de orientación de primer curso, transformando la información universitaria en actividades estructuradas de acogida.
+  \item Ofrecí mentoría y asesoramiento continuados entre estudiantes para facilitar la transición a la universidad.
+  \item Dirigí visitas al campus para presentar instalaciones y recursos mediante explicaciones directas y adaptadas a los nuevos estudiantes.
+  \item Planifiqué eventos académicos y culturales de inclusión, creando oportunidades de integración de estudiantes de primer curso en la comunidad universitaria.
+}
+
+\newcommand{\hcorg}{Centro de Salud de NYUAD}
+\newcommand{\hctitle}{Empleo de estudiante -- Responsable de redes sociales}
+\newcommand{\hcdates}{09/2024 - 05/2025}
+\newcommand{\hclocation}{Abu Dabi, EAU}
+\newcommand{\hcbullets}{%
+  \item Desarrollé campañas de salud dirigidas al alumnado, transformando iniciativas de bienestar en comunicación adaptada a la comunidad de NYU Abu Dhabi.
+  \item Diseñé y publiqué contenidos para redes sociales que promovían recursos de salud, convirtiendo información de servicios en materiales digitales accesibles.
+  \item Actué como contacto principal para consultas del alumnado, derivando las preguntas a los servicios de apoyo del centro de salud.
+  \item Contribuí a la resolución de incidencias mediante gestión directa de consultas, combinando comunicación pública y atención individual al alumnado.
+}
+
+\newcommand{\alpesorg}{Alpes Technologies México}
+\newcommand{\alpestitle}{Ingeniero de proyectos júnior -- SGA y sistemas eléctricos}
+\newcommand{\alpesdates}{06/2024 - 09/2024}
+\newcommand{\alpeslocation}{Ciudad de México, México}
+\newcommand{\alpesbullets}{%
+  \item Aumenté un 60\% la eficiencia operativa y de fabricación respecto a un proceso de inventario completamente manual mediante un sistema automático propio de gestión de almacenes con códigos QR en HTML, JS y Google Drive.
+  \item Implementé trazabilidad por pieza mediante actualizaciones bidireccionales de existencias en tiempo real, acceso por roles e informes automatizados dentro del SGA.
+  \item Elevé el factor de potencia industrial hasta el 99\% mediante la fabricación e instalación de baterías de condensadores para compensación de armónicos, reduciendo los costes energéticos de los clientes un 15\% y las paradas eléctricas un 25\% mediante análisis de subestaciones.
+   %\item Elaboré esquemas unifilares y recomendaciones correctivas para un complejo hotelero afectado por un incendio mediante mediciones in situ y comunicación de resultados a la dirección ejecutiva y del cliente.
+}
+
+\newcommand{\epigsaorg}{EPIGSA}
+\newcommand{\epigsatitle}{Asistente de ingeniería de datos -- SIG e hidráulica}
+\newcommand{\epigsadates}{05/2024 - 07/2024}
+\newcommand{\epigsalocation}{Ciudad de México, México}
+\newcommand{\epigsabullets}{%
+  \item Reduje un 25\% los errores de datos de infraestructuras mediante la automatización de controles de calidad para proyectos municipales de tratamiento de aguas.
+  \item Integré y validé conjuntos de datos SIG en PostgreSQL, preparando información geoespacial para infraestructuras municipales de tratamiento de aguas.
+   %\item Mejoré la fiabilidad de la información de los proyectos mediante comprobaciones automatizadas y validación de los datos SIG incorporados a la base de datos.
+   %\item Relacioné ingeniería de datos espaciales e infraestructuras hidráulicas mediante integración en PostgreSQL y control de calidad automatizado en los flujos de trabajo.
+}
+
+\newcommand{\solarshiporg}{Solar Ship}
+\newcommand{\solarshiptitle}{Ingeniero en prácticas de estrategia y diseño de movilidad aérea}
+\newcommand{\solarshipdates}{05/2023 - 08/2023}
+\newcommand{\solarshiplocation}{Toronto, Canadá}
+\newcommand{\solarshipbullets}{%
+  \item Desarrollé conceptos de infraestructura de logística aérea para zonas remotas de Zambia y Tanzania, relacionando diseño aeroespacial y requisitos de acceso sin conexión a la red.
+  \item Contribuí a la iniciativa Peace+Freedom con un sistema aeronáutico totalmente eléctrico diseñado en torno a las necesidades de conectividad de comunidades remotas.
+  \item Relacioné el desarrollo de sistemas de aeronaves con la planificación de infraestructuras, abordando el problema de la logística aérea más allá del vehículo.
+   %\item Combiné ingeniería aeroespacial y objetivos de sostenibilidad social en un proyecto multinacional para comunidades sin conexión a la red.
+}
+
+\newcommand{\crousorg}{CROUS Besançon Bourgogne Franche-Comté}
+\newcommand{\croustitle}{Empleo de estudiante -- Restauración universitaria}
+\newcommand{\crousdates}{10/2024 - Actualidad}
+\newcommand{\crouslocation}{Besançon, Francia}
+\newcommand{\crousbullets}{%
+  \item Mantuve el ritmo de trabajo de cocina en horas punta mediante apoyo a la preparación de alimentos de gran volumen y a las operaciones internas.
+  \item Apliqué prácticas de higiene y seguridad alimentaria mediante limpieza y desinfección de cocina y tareas de lavado.
+  \item Contribuí a la continuidad del servicio mediante reposición de suministros durante las operaciones de restauración universitaria.
+  \item Coordiné tareas de cocina y apoyo al servicio en un entorno de plazos ajustados, adaptando el trabajo a necesidades operativas cambiantes.
+}
+
+\newcommand{\rallyorg}{Campeonato Mundial de Rally -- Guanajuato}
+\newcommand{\rallytitle}{Comisario técnico oficial de la FIA}
+\newcommand{\rallydates}{11/2019 - 04/2020}
+\newcommand{\rallylocation}{Guanajuato, México}
+\newcommand{\rallybullets}{%
+  \item Realicé el marcaje oficial y la inspección de neumáticos en el Campeonato Mundial de Rally de la FIA en Guanajuato, aplicando los procedimientos establecidos de verificación técnica.
+  \item Contribuí al cumplimiento técnico de los vehículos de competición mediante tareas de verificación conforme a los requisitos de la prueba.
+  \item Coordiné las inspecciones con comisarios responsables y pilotos bajo la presión de un fin de semana de competición.
+  \item Apliqué controles de calidad a las inspecciones técnicas mediante procedimientos de marcaje y verificación descritos en la base de datos conforme a normas ISO 9001.
+}
+
+\newcommand{\papaloteorg}{Papalote Museo del Niño}
+\newcommand{\papalotetitle}{Auxiliar de atención al público}
+\newcommand{\papalotedates}{05/2019 - 07/2019}
+\newcommand{\papalotelocation}{Ciudad de México, México}
+\newcommand{\papalotebullets}{%
+  \item Expliqué exposiciones de ciencia y tecnología a niños y adultos, transformando conceptos complejos en orientación accesible para los visitantes.
+  \item Contribuí a mejoras implantadas en la experiencia de los visitantes mediante propuestas prácticas durante las operaciones del museo.
+  \item Adapté las explicaciones técnicas a un público diverso, promoviendo la participación de distintas edades y necesidades.
+  \item Relacioné la comunicación científica con la interacción directa con el público mediante visitas guiadas a las exposiciones del museo.
+}

@@ -1,0 +1,176 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=1cm]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+ \usepackage{graphicx} 
+
+\usepackage{mathptmx}
+
+% ==========================================
+% SELECT YOUR ARCHETYPE HERE (A, B, C, or D)
+% ==========================================
+\newcommand{\ARCH}{D}
+% Dynamically load archetype_A.tex, archetype_B.tex, etc.
+\input{archetype_\ARCH_ES.tex}
+
+% Select which projects and jobs to display by their variable prefix:
+\newcommand{\projectOne}{rover}
+\newcommand{\projectTwo}{fsae}
+\newcommand{\projectThree}{drone}
+\newcommand{\projectFour}{trentxwb}
+
+\newcommand{\jobOne}{spacelab}
+\newcommand{\jobTwo}{alpes}
+%\newcommand{\jobThree}{epigsa}
+\newcommand{\jobFour}{solarship}
+
+% Helper command to dynamically evaluate: \get{\projectOne}{Title} -> \roverTitle
+\newcommand{\get}[2]{\csname #1#2\endcsname}
+
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=*, itemsep=1pt, topsep=2pt}
+
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\titlespacing{\section}{0pt}{4pt}{4pt}
+
+\titleformat{\subsection}[runin]{\bfseries}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{4pt}{0pt}
+
+%--------------------------------------- BEGINNING ------------------------
+
+\begin{document}
+\small
+\begin{minipage}[c]{0.80\textwidth}
+    {\LARGE\bfseries Román Villarreal}
+
+    \vspace{4pt}
+    Gijón, Asturias, ES
+
+    \vspace{3pt}
+    +34 711 501 576 • 
+    roman.villarreal@eu4m.eu • 
+    \href{https://roman-villarreal-2.jimdosite.com/}{roman-villarreal-2.jimdosite.com} • 
+    \href{https://www.linkedin.com/in/roman-isaac-villarreal/}{linkedin.com/in/roman-isaac-villarreal}
+    \vspace{1pt}
+
+    \textit{\cvsummary}
+    \vspace{2pt}
+    %\hrulefill 
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.15\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{imagen(2).png}
+\end{minipage}
+
+%--------------------------------------- EDUCATION ------------------------
+
+\hrulefill 
+\section*{FORMACIÓN ACADÉMICA}
+
+\textbf{Máster en Ingeniería Mecatrónica} \hfill 2025 - 2027
+
+Doble titulación europea: SUPMICROTECH (Francia, impartido en francés) \& Universidad de Oviedo (España, impartido en español)
+
+Especialización: Análisis de Sistemas y Desarrollo de Producción, IA, Microtécnicas e Ingeniería de Fabricación
+
+\vspace{4pt}
+
+\textbf{Grado en Ingeniería Mecánica} \hfill 2021 - 2025
+
+New York University Abu Dhabi (NYU-AD), Emiratos Árabes Unidos
+
+%Relevant courses : Aerodynamics \& Propulsion, Soft Robotics, Space Economy, Advanced CAD, Composite Materials
+\vspace{2pt}
+
+%--------------------------------------- EXPERIENCE ------------------------
+\hrulefill 
+\section*{EXPERIENCIA}
+
+\textbf{\get{\jobOne}{org}} \hfill \get{\jobOne}{location}
+
+\textit{\get{\jobOne}{title}} \hfill \get{\jobOne}{dates}
+
+\begin{itemize}
+    \get{\jobOne}{bullets}
+\end{itemize}
+
+
+\vspace{2pt}
+
+\textbf{\get{\jobTwo}{org}} \hfill \get{\jobTwo}{location}
+
+\textit{\get{\jobTwo}{title}} \hfill \get{\jobTwo}{dates}
+
+\begin{itemize}
+    \get{\jobTwo}{bullets}
+\end{itemize}
+
+\vspace{2pt}
+
+%\textbf{\get{\jobThree}{org}} \hfill \get{\jobThree}{location}
+
+%\textit{\get{\jobThree}{title}} \hfill \get{\jobThree}{dates}
+
+%\begin{itemize}
+%    \get{\jobThree}{bullets}
+%\end{itemize}
+
+%\vspace{2pt}
+
+\textbf{\get{\jobFour}{org}} \hfill \get{\jobFour}{location}
+
+\textit{\get{\jobFour}{title}} \hfill \get{\jobFour}{dates}
+
+\begin{itemize}
+    \get{\jobFour}{bullets}
+\end{itemize}
+
+\vspace{2pt}
+
+
+%--------------------------------------- PROJECTS ------------------------
+
+\hrulefill 
+\section*{PROYECTOS}
+
+\textbf{\get{\projectOne}{title}} \hfill \get{\projectOne}{dates}
+
+\get{\projectOne}{descOne}
+
+\vspace{4pt}
+
+\textbf{\get{\projectTwo}{title}} \hfill \get{\projectTwo}{dates}
+
+\get{\projectTwo}{descOne}
+
+\vspace{4pt}
+
+\textbf{\get{\projectThree}{title}} \hfill \get{\projectThree}{dates}
+
+\get{\projectThree}{descOne}
+
+\vspace{4pt}
+
+\textbf{\get{\projectFour}{title}} \hfill \get{\projectFour}{dates}
+
+\get{\projectFour}{descOne}
+
+\vspace{2pt}
+
+\hrulefill 
+
+%--------------------------------------- skills  ------------------------
+
+\skills
+
+%\input{skills}
+
+\end{document}
